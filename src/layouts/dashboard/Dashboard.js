@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AttestButton from './../../user/ui/AttestButton.js'
 
 class Dashboard extends Component {
   constructor(props, { authData }) {
@@ -14,6 +15,7 @@ class Dashboard extends Component {
             <h1>Dashboard</h1>
             <p><strong>Congratulations {this.props.authData.name}!</strong> If you're seeing this page, you've logged in with UPort successfully.</p>
           </div>
+          <AttestButton/>
         </div>
       </main>
     )

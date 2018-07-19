@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import AttestButton from './../../user/ui/AttestButton'
 
 class Home extends Component {
   render() {
@@ -28,7 +27,6 @@ class Home extends Component {
             </code></pre>
             <h3>Further Reading</h3>
             <p>The React/Redux portions of the authentication fuctionality are provided by <a href="https://github.com/mjrussell/redux-auth-wrapper" target="_blank">mjrussell/redux-auth-wrapper</a>.</p>
-            <AttestButton/>
           </div>
         </div>
       </main>

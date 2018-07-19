@@ -3,10 +3,13 @@ import { uport } from './../../util/connectors.js'
 
 class AttestButton extends Component {
   attest() {
+    // 証明情報の発行
+    // まずはログインする
     uport.requestCredentials().then((credentials) => {
       // Can verify the uport user is verified with the returned 'credentials' object.
       var d = new Date();
       var month = ['Jan', 'Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov', 'Dec'];
+      // ユーザーの合意を要求
       uport.attestCredentials({
         sub: credentials.address,
         claim: {
